@@ -61,9 +61,10 @@ nav a {
 /* Header related styles */
 .header {
   background-color: #fff8f3;
-  background-image: url("../images/header_bg.png"), url("../images/developer.png");
+  background-image: url("../images/header_bg.png"),
+    url("../images/developer.png");
   background-repeat: no-repeat;
-  background-position: bottom right,top left;
+  background-position: bottom right, top left;
 }
 
 .banner {
@@ -165,32 +166,43 @@ main section {
 }
 
 /* Footer related styles */
-footer{
-    display: flex;
-    padding: 0 130px;
-    background-color: #FFF8F3;
-    gap: 100px;
+footer {
+  display: flex;
+  padding: 0 130px;
+  background-color: #fff8f3;
+  gap: 100px;
 }
-.footer-title{
-    font-size: 30px;
-    font-weight: 700;
+.footer-title {
+  font-size: 30px;
+  font-weight: 700;
 }
-.footer-title-description{
-    color: #474747;
+.footer-title-description {
+  color: #474747;
 }
 .footer-column {
-    width: 50%;
-    padding-right: 20px;
+  width: 50%;
+  padding-right: 20px;
 }
-.contact-form input[type="text"],input[type="email"], textarea{
-    display: block;
-    margin-bottom: 24px;
-    padding: 18px 35px;
-    color: #757575;
-    width: 65%;
-    border: none;
+.contact-form input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
+  margin-bottom: 24px;
+  padding: 18px 35px;
+  color: #757575;
+  width: 65%;
+  border: none;
+}
+.contact-form {
+  margin-bottom: 100px;
+}
 
-}
-.contact-form{
-    margin-bottom: 100px;
+/* Responsive styles */
+@media screen and (max-width: 576px) {
+  .skills-container {
+    flex-direction: column;
+  }
+  .what-i-do-description {
+    padding: 20px;
+  }
 }
